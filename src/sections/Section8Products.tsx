@@ -74,17 +74,17 @@ export default function Section8Products() {
   }, []);
 
   const products = [
-    { image: '/images/product_cup.jpg', title: 'Ice Cream Cup', specs: 'Creamy \u00b7 120 ml' },
-    { image: '/images/product_cone.jpg', title: 'Cone Bar', specs: 'Crispy \u00b7 90 ml' },
-    { image: '/images/product_tub.jpg', title: 'Family Tub', specs: 'Share size \u00b7 500 ml' },
+    { image: '/images/product_cup.jpg', title: 'Ice Cream Cup', specs: 'Creamy - 120 ml' },
+    { image: '/images/product_cone.jpg', title: 'Cone Bar', specs: 'Crispy - 90 ml' },
+    { image: '/images/product_tub.jpg', title: 'Family Tub', specs: 'Share size - 500 ml' },
   ];
 
   return (
     <section
       ref={sectionRef}
       id="products"
-      className="relative w-full min-h-screen py-[10vh]"
-      style={{ zIndex: 80, background: 'linear-gradient(180deg, #B6FF70 0%, #A8F060 100%)' }}
+      className="products-section relative w-full min-h-dvh py-[10vh]"
+      style={{ zIndex: 80 }}
     >
       {/* Subtle vignette */}
       <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.05) 100%)' }} />
@@ -94,10 +94,10 @@ export default function Section8Products() {
           {/* Left Heading */}
           <div ref={headingRef} className="lg:w-[40%] lg:sticky lg:top-[20vh] lg:self-start">
             <h2 className="font-display font-bold text-[#111] text-shadow-display leading-[0.95]">
-              <span className="block text-[clamp(32px,5vw,64px)] uppercase tracking-tight">Our</span>
-              <span className="block text-[clamp(32px,5vw,64px)] uppercase tracking-tight mt-1">Products</span>
+              <span className="block text-4xl md:text-5xl lg:text-6xl uppercase">Our</span>
+              <span className="block text-4xl md:text-5xl lg:text-6xl uppercase mt-1">Products</span>
             </h2>
-            <p className="mt-6 font-body text-[clamp(14px,1.2vw,18px)] text-[#2B2B2B] leading-relaxed max-w-[90%]">
+            <p className="mt-6 font-body text-base md:text-lg text-[#2B2B2B] leading-relaxed max-w-[90%]">
               Cups, cones, and bars—crafted for everyday moments and big celebrations.
             </p>
             <a href="#" className="inline-flex items-center gap-2 mt-6 font-label text-sm uppercase tracking-wider text-[#111] hover:text-lime-dark transition-colors group">
@@ -111,12 +111,14 @@ export default function Section8Products() {
             {products.map((product, i) => (
               <div
                 key={i}
-                className="product-card glass-card overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+                className="product-card product-shell glass-card overflow-hidden hover:shadow-2xl transition-shadow duration-300"
               >
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="product-media aspect-[4/3] overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>

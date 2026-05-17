@@ -59,30 +59,30 @@ export default function Section5Freezer() {
   ];
 
   return (
-    <section ref={sectionRef} className="relative w-full h-screen overflow-hidden" style={{ zIndex: 50 }}>
+    <section ref={sectionRef} className="journey-section story-section relative w-full h-dvh overflow-hidden" style={{ zIndex: 50 }}>
       {/* Background */}
-      <div className="absolute inset-0">
-        <img src="/images/churner_bg.jpg" alt="Ice cream churners" className="w-full h-full object-cover" />
+      <div className="section-bg absolute inset-0">
+        <img src="/images/churner_bg.jpg" alt="Ice cream churners" loading="lazy" decoding="async" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-lime/50 via-lime/20 to-transparent" />
       </div>
 
       {/* Left Panel */}
       <div
         ref={panelRef}
-        className="absolute glass-panel p-8"
+        className="story-panel absolute glass-panel p-8"
         style={{ left: '6vw', top: '22vh', width: '42vw', height: '56vh', maxWidth: '560px' }}
       >
         <h2 className="font-display font-bold text-[#111] text-shadow-display leading-[0.95]">
-          <span className="word block text-[clamp(28px,4vw,56px)] uppercase tracking-tight">The</span>
-          <span className="word block text-[clamp(28px,4vw,56px)] uppercase tracking-tight mt-1">Freezer</span>
+          <span className="word block text-4xl md:text-5xl lg:text-6xl uppercase">The</span>
+          <span className="word block text-4xl md:text-5xl lg:text-6xl uppercase mt-1">Freezer</span>
         </h2>
-        <p className="word mt-8 font-body text-[clamp(13px,1.1vw,16px)] text-[#2B2B2B] leading-relaxed max-w-[90%]">
+        <p className="word mt-8 font-body text-sm md:text-base text-[#2B2B2B] leading-relaxed max-w-[90%]">
           Slow churning, steady freezing, and a careful whip create the signature texture—smooth, light, and creamy.
         </p>
       </div>
 
       {/* Right Circles */}
-      <div ref={circlesRef} className="absolute flex flex-col gap-5" style={{ left: '70vw', top: '20vh' }}>
+      <div ref={circlesRef} className="story-side right-circles absolute flex flex-col gap-5" style={{ left: '70vw', top: '20vh' }}>
         {circles.map((c, i) => (
           <div key={i} className="circle-item w-[72px] h-[72px] rounded-full glass-panel flex flex-col items-center justify-center gap-1">
             <span className="text-sky-500">{c.icon}</span>
@@ -92,7 +92,7 @@ export default function Section5Freezer() {
       </div>
 
       {/* Micro Pills */}
-      <div ref={microRef} className="absolute left-1/2 bottom-[6vh] -translate-x-1/2 flex gap-3">
+      <div ref={microRef} className="micro-strip absolute left-1/2 bottom-[6vh] -translate-x-1/2 flex gap-3">
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Air-light</span></div>
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Smooth</span></div>
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Creamy</span></div>

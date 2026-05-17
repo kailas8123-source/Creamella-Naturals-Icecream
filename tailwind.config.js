@@ -6,20 +6,28 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ['Fredoka', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        body: ['Nunito Sans', 'sans-serif'],
         label: ['Space Grotesk', 'sans-serif'],
       },
       colors: {
         lime: {
-          DEFAULT: '#B6FF70',
-          dark: '#9EE850',
+          DEFAULT: '#C4F763',
+          dark: '#6FAF2D',
         },
         mint: {
           DEFAULT: '#F7FFFC',
           bg: '#E8FFF5',
         },
         sky: {
-          accent: '#B3E0FF',
+          accent: '#A7D8F5',
+        },
+        berry: {
+          DEFAULT: '#F45D8D',
+          soft: '#FFE0EA',
+        },
+        custard: {
+          DEFAULT: '#FFD978',
+          soft: '#FFF3CC',
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

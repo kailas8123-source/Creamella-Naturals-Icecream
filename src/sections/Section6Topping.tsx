@@ -53,30 +53,30 @@ export default function Section6Topping() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full h-screen overflow-hidden" style={{ zIndex: 60 }}>
+    <section ref={sectionRef} className="journey-section story-section relative w-full h-dvh overflow-hidden" style={{ zIndex: 60 }}>
       {/* Background */}
-      <div className="absolute inset-0">
-        <img src="/images/topping_cups_bg.jpg" alt="Ice cream toppings" className="w-full h-full object-cover" />
+      <div className="section-bg absolute inset-0">
+        <img src="/images/topping_cups_bg.jpg" alt="Ice cream toppings" loading="lazy" decoding="async" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-lime/50 via-lime/20 to-transparent" />
       </div>
 
       {/* Left Panel */}
       <div
         ref={panelRef}
-        className="absolute glass-panel p-8"
+        className="story-panel absolute glass-panel p-8"
         style={{ left: '6vw', top: '22vh', width: '42vw', height: '56vh', maxWidth: '560px' }}
       >
         <h2 className="font-display font-bold text-[#111] text-shadow-display leading-[0.95]">
-          <span className="word block text-[clamp(28px,4vw,56px)] uppercase tracking-tight">Topping</span>
-          <span className="word block text-[clamp(28px,4vw,56px)] uppercase tracking-tight mt-1">Bar</span>
+          <span className="word block text-4xl md:text-5xl lg:text-6xl uppercase">Topping</span>
+          <span className="word block text-4xl md:text-5xl lg:text-6xl uppercase mt-1">Bar</span>
         </h2>
-        <p className="word mt-8 font-body text-[clamp(13px,1.1vw,16px)] text-[#2B2B2B] leading-relaxed max-w-[90%]">
+        <p className="word mt-8 font-body text-sm md:text-base text-[#2B2B2B] leading-relaxed max-w-[90%]">
           From berry bursts to cookie crumble—top it your way for a little extra joy in every spoonful.
         </p>
       </div>
 
       {/* Right Pills */}
-      <div ref={pillsRef} className="absolute flex flex-col gap-5" style={{ left: '60vw', top: '26vh', width: '34vw' }}>
+      <div ref={pillsRef} className="story-side right-pills absolute flex flex-col gap-5" style={{ left: '60vw', top: '26vh', width: '34vw' }}>
         <div className="tpill">
           <GlassPill icon={<Cherry size={16} className="text-pink-500" />}>Berry Burst</GlassPill>
         </div>
@@ -89,7 +89,7 @@ export default function Section6Topping() {
       </div>
 
       {/* Micro Pills */}
-      <div ref={microRef} className="absolute left-1/2 bottom-[6vh] -translate-x-1/2 flex gap-3">
+      <div ref={microRef} className="micro-strip absolute left-1/2 bottom-[6vh] -translate-x-1/2 flex gap-3">
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Crunchy</span></div>
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Chewy</span></div>
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Fruity</span></div>

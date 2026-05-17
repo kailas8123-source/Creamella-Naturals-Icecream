@@ -80,11 +80,11 @@ export default function Section1Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-screen overflow-hidden"
+      className="journey-section hero-section relative w-full h-dvh overflow-hidden"
       style={{ zIndex: 10 }}
     >
       {/* Background Image */}
-      <div className="absolute inset-0">
+      <div className="section-bg absolute inset-0">
         <img
           src="/images/hero_kitchen_bg.jpg"
           alt="Modern kitchen"
@@ -96,7 +96,7 @@ export default function Section1Hero() {
       </div>
 
       {/* Top Right Badge */}
-      <div className="absolute right-[3vw] top-[10vh] w-[11vh] h-[11vh] rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center shadow-lg border border-white/60 z-20">
+      <div className="hero-badge absolute right-[3vw] top-[10vh] rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center shadow-lg border border-white/60 z-20">
         <div className="text-center">
           <Leaf size={20} className="mx-auto text-lime-dark mb-0.5" />
           <span className="font-label text-[10px] uppercase tracking-wider text-[#2B2B2B] block">Natural</span>
@@ -107,7 +107,7 @@ export default function Section1Hero() {
       {/* Center Card */}
       <div
         ref={cardRef}
-        className="absolute glass-panel"
+        className="hero-panel absolute glass-panel"
         style={{
           left: '50%',
           top: '18vh',
@@ -120,10 +120,10 @@ export default function Section1Hero() {
         {/* Headline */}
         <div ref={headlineRef} className="absolute left-[7%] top-[12%] w-[86%]">
           <h1 className="font-display font-bold text-[#111] text-shadow-display leading-[0.95]">
-            <span className="word block text-[clamp(36px,5vw,72px)] uppercase tracking-tight">Frozen</span>
-            <span className="word block text-[clamp(48px,7vw,108px)] uppercase tracking-tight mt-1">Joy</span>
+            <span className="word block text-5xl md:text-6xl lg:text-7xl uppercase">Frozen</span>
+            <span className="word block text-7xl md:text-8xl lg:text-9xl uppercase mt-1">Joy</span>
           </h1>
-          <p className="word mt-6 font-body text-[clamp(13px,1.1vw,16px)] text-[#2B2B2B] max-w-[80%] leading-relaxed">
+          <p className="word mt-6 font-body text-sm md:text-base text-[#2B2B2B] max-w-[80%] leading-relaxed">
             Made with fresh milk, real fruit & naturally delicious.
           </p>
         </div>
@@ -144,7 +144,7 @@ export default function Section1Hero() {
         {/* CTA */}
         <button
           ref={ctaRef}
-          className="absolute left-[7%] bottom-[10%] glass-pill px-6 py-3 flex items-center gap-2 bg-sky-accent/80 hover:bg-sky-accent transition-all hover:-translate-y-0.5 hover:shadow-lg"
+          className="primary-cta absolute left-[7%] bottom-[10%] glass-pill px-6 py-3 flex items-center gap-2 transition-all hover:-translate-y-0.5 hover:shadow-lg"
         >
           <span className="font-label text-sm uppercase tracking-wider">Explore flavors</span>
           <ArrowRight size={16} />
@@ -159,7 +159,7 @@ export default function Section1Hero() {
       {/* Bottom Micro Pills */}
       <div
         ref={microPillsRef}
-        className="absolute left-1/2 bottom-[5vh] -translate-x-1/2 flex gap-3"
+        className="micro-strip absolute left-1/2 bottom-[5vh] -translate-x-1/2 flex gap-3"
       >
         <GlassPill>Natural</GlassPill>
         <GlassPill>Creamy</GlassPill>

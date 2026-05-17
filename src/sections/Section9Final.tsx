@@ -73,10 +73,10 @@ export default function Section9Final() {
   ];
 
   return (
-    <section ref={sectionRef} className="relative w-full h-screen overflow-hidden" style={{ zIndex: 90 }}>
+    <section ref={sectionRef} className="journey-section story-section final-section relative w-full h-dvh overflow-hidden" style={{ zIndex: 90 }}>
       {/* Background */}
-      <div className="absolute inset-0">
-        <img src="/images/final_cone_bg.jpg" alt="Enjoying ice cream cone" className="w-full h-full object-cover" />
+      <div className="section-bg absolute inset-0">
+        <img src="/images/final_cone_bg.jpg" alt="Enjoying ice cream cone" loading="lazy" decoding="async" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-lime/40 via-lime/20 to-transparent" />
       </div>
 
@@ -86,14 +86,14 @@ export default function Section9Final() {
       {/* Left Panel */}
       <div
         ref={panelRef}
-        className="absolute glass-panel p-8"
+        className="story-panel absolute glass-panel p-8"
         style={{ left: '6vw', top: '22vh', width: '42vw', height: '56vh', maxWidth: '560px' }}
       >
         <h2 className="font-display font-bold text-[#111] text-shadow-display leading-[0.95]">
-          <span className="word block text-[clamp(28px,4vw,56px)] uppercase tracking-tight">Ready To</span>
-          <span className="word block text-[clamp(28px,4vw,56px)] uppercase tracking-tight mt-1">Scoop?</span>
+          <span className="word block text-4xl md:text-5xl lg:text-6xl uppercase">Ready To</span>
+          <span className="word block text-4xl md:text-5xl lg:text-6xl uppercase mt-1">Scoop?</span>
         </h2>
-        <p className="word mt-8 font-body text-[clamp(13px,1.1vw,16px)] text-[#2B2B2B] leading-relaxed max-w-[90%]">
+        <p className="word mt-8 font-body text-sm md:text-base text-[#2B2B2B] leading-relaxed max-w-[90%]">
           Find a store near you or order online—your next favorite flavor is waiting.
         </p>
       </div>
@@ -101,7 +101,7 @@ export default function Section9Final() {
       {/* Right 2x2 Grid */}
       <div
         ref={gridRef}
-        className="absolute grid grid-cols-2 gap-4"
+        className="story-side right-grid absolute grid grid-cols-2 gap-4"
         style={{ left: '62vw', top: '22vh', width: '28vw', maxWidth: '360px' }}
       >
         {gridItems.map((item, i) => (
@@ -114,7 +114,7 @@ export default function Section9Final() {
 
       {/* CTA Button */}
       <div ref={ctaRef} className="absolute left-1/2 bottom-[14vh] -translate-x-1/2">
-        <button className="glass-pill px-8 py-4 flex items-center gap-3 bg-sky-accent/90 hover:bg-sky-accent transition-all hover:-translate-y-0.5 hover:shadow-xl">
+        <button className="primary-cta glass-pill px-8 py-4 flex items-center gap-3 transition-all hover:-translate-y-0.5 hover:shadow-xl">
           <span className="font-label text-sm uppercase tracking-wider">Order now</span>
           <ArrowRight size={18} />
         </button>
@@ -126,7 +126,7 @@ export default function Section9Final() {
       </div>
 
       {/* Micro Pills */}
-      <div ref={microRef} className="absolute left-1/2 bottom-[5vh] -translate-x-1/2 flex gap-3">
+      <div ref={microRef} className="micro-strip absolute left-1/2 bottom-[5vh] -translate-x-1/2 flex gap-3">
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Fast Delivery</span></div>
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Fresh Pack</span></div>
         <div className="glass-pill px-4 py-2"><span className="font-label text-xs uppercase tracking-widest text-[#2B2B2B]">Happiness Guaranteed</span></div>
