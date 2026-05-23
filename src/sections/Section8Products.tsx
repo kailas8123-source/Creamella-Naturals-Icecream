@@ -82,7 +82,7 @@ export default function Section8Products() {
   return (
     <section
       ref={sectionRef}
-      id="products"
+      id="range"
       className="products-section relative w-full min-h-dvh py-[10vh]"
       style={{ zIndex: 80 }}
     >

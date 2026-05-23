@@ -1,0 +1,32 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="scoop1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(302 248) rotate(62) scale(142)">
+      <stop stop-color="#FFFDF8"/>
+      <stop offset=".58" stop-color="#FFD978"/>
+      <stop offset="1" stop-color="#A7652B"/>
+    </radialGradient>
+    <radialGradient id="scoop2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(438 254) rotate(62) scale(148)">
+      <stop stop-color="#FFDCE7"/>
+      <stop offset=".52" stop-color="#F45D8D"/>
+      <stop offset="1" stop-color="#8F1A44"/>
+    </radialGradient>
+    <linearGradient id="cone" x1="244" y1="357" x2="443" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9B466"/>
+      <stop offset="1" stop-color="#9A5A24"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="25" stdDeviation="28" flood-color="#171712" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="720" height="720" rx="56" fill="#E8FFF5"/>
+  <circle cx="143" cy="142" r="72" fill="#DFF2FF"/>
+  <ellipse cx="363" cy="588" rx="176" ry="38" fill="#171712" opacity=".14"/>
+  <g filter="url(#shadow)">
+    <path d="M234 339h250L373 652c-6 18-31 18-37 0L234 339Z" fill="url(#cone)"/>
+    <path d="M263 404h185M282 480h133M304 551h70" stroke="#794315" stroke-width="9" stroke-linecap="round" opacity=".6"/>
+    <path d="M448 404H263M417 480H282M374 551H304" stroke="#F4C783" stroke-width="5" stroke-linecap="round" opacity=".44"/>
+    <path d="M241 316c-28-72 25-156 106-157 75-1 130 70 108 143-22 73-133 92-186 42-11-10-20-19-28-28Z" fill="url(#scoop1)"/>
+    <path d="M370 312c-25-77 34-160 118-151 83 9 133 99 89 168-44 69-157 71-195 4-5-8-9-15-12-21Z" fill="url(#scoop2)"/>
+    <path d="M315 214c33 22 77 23 116 2M421 223c39 26 91 31 134 11" stroke="#FFFDF8" stroke-width="17" stroke-linecap="round" opacity=".72"/>
+    <circle cx="420" cy="127" r="25" fill="#C4F763"/>
+  </g>
+  <text x="226" y="91" font-family="Fredoka, Arial" font-size="52" font-weight="700" fill="#171712">Cone Bar</text>
+</svg>

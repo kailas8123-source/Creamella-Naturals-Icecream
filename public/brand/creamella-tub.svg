@@ -1,0 +1,27 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tub" x1="147" y1="269" x2="555" y2="615" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF1"/>
+      <stop offset=".46" stop-color="#A7D8F5"/>
+      <stop offset="1" stop-color="#F45D8D"/>
+    </linearGradient>
+    <radialGradient id="lid" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(365 224) rotate(74) scale(228 80)">
+      <stop stop-color="#FFFDF8"/>
+      <stop offset=".52" stop-color="#FFD978"/>
+      <stop offset="1" stop-color="#F45D8D"/>
+    </radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="25" stdDeviation="28" flood-color="#171712" flood-opacity=".2"/></filter>
+  </defs>
+  <rect width="720" height="720" rx="56" fill="#DFF2FF"/>
+  <circle cx="590" cy="140" r="72" fill="#FFE0EA"/>
+  <ellipse cx="360" cy="595" rx="217" ry="42" fill="#171712" opacity=".13"/>
+  <g filter="url(#shadow)">
+    <path d="M139 250h442l-44 285c-8 53-54 92-108 92H291c-54 0-100-39-108-92l-44-285Z" fill="url(#tub)"/>
+    <path d="M186 329h348l-29 171c-7 43-44 74-87 74H302c-43 0-80-31-87-74l-29-171Z" fill="#FFFDF1" fill-opacity=".72"/>
+    <ellipse cx="360" cy="250" rx="221" ry="69" fill="url(#lid)"/>
+    <ellipse cx="360" cy="239" rx="177" ry="39" fill="#FFFDF1" fill-opacity=".74"/>
+    <path d="M260 424c60 40 142 42 204 4" stroke="#C4F763" stroke-width="20" stroke-linecap="round"/>
+  </g>
+  <text x="264" y="444" font-family="Fredoka, Arial" font-size="62" font-weight="700" fill="#171712">Tub</text>
+  <text x="240" y="499" font-family="Nunito Sans, Arial" font-size="26" font-weight="800" fill="#171712">500 ml family pack</text>
+</svg>

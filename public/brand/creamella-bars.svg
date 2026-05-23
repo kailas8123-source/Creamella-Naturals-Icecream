@@ -1,0 +1,26 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="barPink" x1="219" y1="151" x2="307" y2="461" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFDCE7"/>
+      <stop offset=".5" stop-color="#F45D8D"/>
+      <stop offset="1" stop-color="#8F1A44"/>
+    </linearGradient>
+    <linearGradient id="barGreen" x1="405" y1="130" x2="500" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAFFE4"/>
+      <stop offset=".5" stop-color="#C4F763"/>
+      <stop offset="1" stop-color="#5E932D"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#171712" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="720" height="720" rx="56" fill="#FFF3CC"/>
+  <ellipse cx="360" cy="590" rx="206" ry="40" fill="#171712" opacity=".13"/>
+  <g filter="url(#shadow)">
+    <rect x="177" y="154" width="148" height="346" rx="72" fill="url(#barPink)"/>
+    <rect x="399" y="124" width="148" height="376" rx="72" fill="url(#barGreen)"/>
+    <rect x="228" y="466" width="47" height="137" rx="23.5" fill="#D9954A"/>
+    <rect x="450" y="466" width="47" height="137" rx="23.5" fill="#D9954A"/>
+    <path d="M212 221c34 21 77 22 116 3M432 192c36 22 80 22 118 0" stroke="#FFFDF1" stroke-width="18" stroke-linecap="round" opacity=".74"/>
+    <circle cx="532" cy="94" r="52" fill="#FFE0EA"/>
+  </g>
+  <text x="128" y="91" font-family="Fredoka, Arial" font-size="52" font-weight="700" fill="#171712">Fruit Bars</text>
+</svg>

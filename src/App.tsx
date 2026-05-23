@@ -1,7 +1,10 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import PromoBar from './components/PromoBar';
 import Navbar from './components/Navbar';
+import ConeChatbot from './components/ConeChatbot';
+import CommerceLanding from './sections/CommerceLanding';
 import Section1Hero from './sections/Section1Hero';
 import Section2Milk from './sections/Section2Milk';
 import Section3Fruit from './sections/Section3Fruit';
@@ -78,8 +81,10 @@ function App() {
 
   return (
     <>
+      <PromoBar />
       <Navbar />
       <main className="relative">
+        <CommerceLanding />
         <Section1Hero />
         <Section2Milk />
         <Section3Fruit />
@@ -90,6 +95,7 @@ function App() {
         <Section8Products />
         <Section9Final />
       </main>
+      <ConeChatbot />
       {/* Grain overlay */}
       <div className="grain-overlay" />
     </>

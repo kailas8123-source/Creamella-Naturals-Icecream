@@ -80,6 +80,7 @@ export default function Section1Hero() {
   return (
     <section
       ref={sectionRef}
+      id="process"
       className="journey-section hero-section relative w-full h-dvh overflow-hidden"
       style={{ zIndex: 10 }}
     >

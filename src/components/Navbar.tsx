@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ShoppingBag } from 'lucide-react';
+import CreamellaLogo from './CreamellaLogo';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,18 +29,15 @@ export default function Navbar() {
       }}
     >
       <div className="flex items-center gap-2">
-        <div className="brand-mark flex items-center justify-center">
-          <span className="font-display font-bold text-lg">C</span>
-        </div>
-        <span className="brand-name font-display font-bold text-xl text-[#111]">Creamella</span>
+        <CreamellaLogo />
       </div>
 
       <div className="hidden md:flex items-center gap-3">
         <div className="nav-links glass-pill px-5 py-2.5 flex items-center gap-6">
-          {['Process', 'Products', 'About', 'Contact'].map((item) => (
+          {['Shop', 'Flavors', 'Process', 'Products'].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={item === 'Shop' ? '#products' : item === 'Products' ? '#range' : `#${item.toLowerCase()}`}
               className="font-label text-xs uppercase text-[#2B2B2B] hover:text-[#111] transition-colors"
             >
               {item}

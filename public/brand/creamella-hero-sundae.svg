@@ -1,0 +1,76 @@
+<svg width="1200" height="920" viewBox="0 0 1200 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 170) rotate(44) scale(790 680)">
+      <stop stop-color="#FFE7F0"/>
+      <stop offset=".48" stop-color="#FFF3CC"/>
+      <stop offset="1" stop-color="#E8FFF5"/>
+    </radialGradient>
+    <radialGradient id="vanilla" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(542 267) rotate(76) scale(160 190)">
+      <stop stop-color="#FFFDF5"/>
+      <stop offset=".54" stop-color="#FFEEC8"/>
+      <stop offset="1" stop-color="#DCA85F"/>
+    </radialGradient>
+    <radialGradient id="strawberry" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(759 349) rotate(65) scale(190 210)">
+      <stop stop-color="#FFD7E2"/>
+      <stop offset=".5" stop-color="#F45D8D"/>
+      <stop offset="1" stop-color="#9E214B"/>
+    </radialGradient>
+    <radialGradient id="pistachio" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(418 399) rotate(75) scale(180 210)">
+      <stop stop-color="#F6FFE0"/>
+      <stop offset=".48" stop-color="#BDEB62"/>
+      <stop offset="1" stop-color="#598D2A"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="234" y1="471" x2="911" y2="831" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF1" stop-opacity=".82"/>
+      <stop offset=".45" stop-color="#FFFFFF" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#F45D8D" stop-opacity=".2"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="30" stdDeviation="34" flood-color="#2F3329" flood-opacity=".22"/>
+    </filter>
+    <filter id="texture">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .07"/>
+      </feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="920" rx="92" fill="url(#bgA)"/>
+  <circle cx="132" cy="152" r="72" fill="#F45D8D" fill-opacity=".18"/>
+  <circle cx="1058" cy="181" r="118" fill="#C4F763" fill-opacity=".22"/>
+  <circle cx="1004" cy="730" r="144" fill="#A7D8F5" fill-opacity=".2"/>
+  <ellipse cx="604" cy="793" rx="383" ry="62" fill="#171712" opacity=".14"/>
+  <g filter="url(#softShadow)">
+    <path d="M266 515h674c-16 205-151 313-338 313S282 720 266 515Z" fill="url(#glass)"/>
+    <path d="M295 536c55 53 169 83 306 83 139 0 252-30 308-83-34 161-148 246-307 246-160 0-274-85-307-246Z" fill="#FFFDF1" fill-opacity=".38"/>
+    <ellipse cx="603" cy="511" rx="338" ry="70" fill="#FFFDF1"/>
+    <ellipse cx="603" cy="500" rx="297" ry="45" fill="#FFD978" fill-opacity=".35"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <path d="M331 452c-29-88 38-187 143-203 102-15 181 56 166 147-14 91-98 158-190 150-58-5-101-39-119-94Z" fill="url(#pistachio)"/>
+    <path d="M495 378c-43 33-93 45-142 33" stroke="#F8FFD8" stroke-width="20" stroke-linecap="round" opacity=".72"/>
+    <path d="M385 462c36 29 93 39 147 20" stroke="#517F2F" stroke-width="8" stroke-linecap="round" opacity=".22"/>
+    <path d="M488 251c-40-76 20-171 118-174 98-3 169 88 131 174-38 86-155 117-220 55-12-11-22-30-29-55Z" fill="url(#vanilla)"/>
+    <path d="M552 174c48 21 101 21 151 0" stroke="#FFFDF8" stroke-width="24" stroke-linecap="round" opacity=".8"/>
+    <path d="M649 302c54 22 123 8 166-39" stroke="#C98B42" stroke-width="8" stroke-linecap="round" opacity=".2"/>
+    <path d="M649 359c-12-98 73-185 180-163 108 22 152 139 88 217-64 78-194 75-244-6-9-15-17-31-24-48Z" fill="url(#strawberry)"/>
+    <path d="M738 255c42 36 100 50 158 36" stroke="#FFD6E0" stroke-width="23" stroke-linecap="round" opacity=".74"/>
+    <circle cx="612" cy="76" r="29" fill="#F45D8D"/>
+    <circle cx="624" cy="64" r="9" fill="#FFFDF1"/>
+    <path d="M592 42c21-21 56-23 81-4" stroke="#6FAF2D" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#texture)" opacity=".55">
+    <circle cx="396" cy="367" r="5" fill="#FFFDF1"/>
+    <circle cx="450" cy="316" r="4" fill="#FFFDF1"/>
+    <circle cx="718" cy="337" r="5" fill="#FFFDF1"/>
+    <circle cx="806" cy="402" r="4" fill="#FFFDF1"/>
+    <circle cx="583" cy="226" r="4" fill="#9A6A2E"/>
+    <circle cx="674" cy="182" r="5" fill="#9A6A2E"/>
+  </g>
+  <path d="M208 377c-54 27-88 77-92 139M969 391c58 35 89 88 90 157" stroke="#FFFDF1" stroke-width="18" stroke-linecap="round" opacity=".7"/>
+  <path d="M143 678c81-35 170-43 267-26M789 644c77-25 151-22 223 9" stroke="#FFFDF1" stroke-width="16" stroke-linecap="round" opacity=".8"/>
+  <text x="92" y="115" font-family="Fredoka, Arial" font-size="54" font-weight="700" fill="#171712">Creamella</text>
+  <text x="92" y="166" font-family="Nunito Sans, Arial" font-size="27" font-weight="700" fill="#6FAF2D">Real scoops. Fresh milk. Glossy joy.</text>
+</svg>

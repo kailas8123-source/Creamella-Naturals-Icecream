@@ -1,0 +1,35 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cream" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(348 176) rotate(75) scale(128 152)">
+      <stop stop-color="#FFFDF8"/>
+      <stop offset=".58" stop-color="#FFE6B4"/>
+      <stop offset="1" stop-color="#B9713C"/>
+    </radialGradient>
+    <radialGradient id="pink" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430 236) rotate(66) scale(150 170)">
+      <stop stop-color="#FFDDE7"/>
+      <stop offset=".54" stop-color="#F45D8D"/>
+      <stop offset="1" stop-color="#941E49"/>
+    </radialGradient>
+    <linearGradient id="cup" x1="166" y1="324" x2="530" y2="625" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF1"/>
+      <stop offset=".52" stop-color="#FFD978"/>
+      <stop offset="1" stop-color="#F45D8D"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#171712" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="720" height="720" rx="56" fill="#FFE0EA"/>
+  <circle cx="588" cy="120" r="68" fill="#FFF3CC"/>
+  <ellipse cx="360" cy="598" rx="190" ry="42" fill="#171712" opacity=".14"/>
+  <g filter="url(#shadow)">
+    <path d="M171 317h378l-45 250c-7 39-41 67-80 67H296c-39 0-73-28-80-67l-45-250Z" fill="url(#cup)"/>
+    <path d="M211 362h298l-27 149c-7 37-39 64-77 64h-90c-38 0-70-27-77-64l-27-149Z" fill="#FFFDF1" fill-opacity=".76"/>
+    <ellipse cx="360" cy="316" rx="190" ry="58" fill="#FFFDF1"/>
+    <path d="M223 300c12-77 81-132 160-124 76 8 133 69 133 142-73 37-222 30-293-18Z" fill="url(#pink)"/>
+    <path d="M253 261c12-68 81-111 151-92 57 15 93 61 96 113-83 25-170 18-247-21Z" fill="url(#cream)"/>
+    <path d="M307 205c30 19 78 20 118 0" stroke="#FFFDF8" stroke-width="17" stroke-linecap="round" opacity=".8"/>
+    <circle cx="391" cy="122" r="24" fill="#F45D8D"/>
+    <circle cx="401" cy="113" r="7" fill="#FFFDF1"/>
+  </g>
+  <text x="285" y="457" font-family="Fredoka, Arial" font-size="45" font-weight="700" fill="#171712">Cup</text>
+  <text x="282" y="501" font-family="Nunito Sans, Arial" font-size="24" font-weight="800" fill="#6FAF2D">120 ml</text>
+</svg>
